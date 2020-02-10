@@ -37,7 +37,7 @@ describe 'my own reduce' do
   end
 
   it "returns false when any value is false" do
-    source_array = [1, 2, true, "razmatazz", false]
+    source_array = [1, 2, true, "razmatazz", false,]
     expect(reduce(source_array){|memo, n| memo && n}).to be_falsy
   end
 
